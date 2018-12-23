@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-8" *ngFor='let product of products' style="padding: 20px; margin: auto">
+    <a routerLink="/products/{{product.id}}" style="color: #505050; text-decoration: none;">
+    	<div>
+	      <h2>{{product.id}}. {{product.name}}</h2>
+	      <p>{{product.description}}</p>
+      	</div>
+    </a>
+    <hr>
+  </div>
+</div>
